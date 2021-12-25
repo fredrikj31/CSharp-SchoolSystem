@@ -1,0 +1,34 @@
+﻿<Window x:Class="SchoolSystem.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolSystem"
+        mc:Ignorable="d"
+        Title="Login" Height="500" Width="500" ResizeMode="NoResize">
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+		</Grid.RowDefinitions>
+		<TextBlock Text="Login" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+		<!-- Username Form -->
+		<Label Content="Username:" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Padding="12,0,0,12"></Label>
+		<TextBox Name="inputUsername" Margin="30,20,30,20" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" FontSize="18"></TextBox>
+		<!-- Password Form -->
+		<Label Content="Password:" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Padding="12,0,0,12"></Label>
+		<PasswordBox Name="inputPassword" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Margin="30,20,30,20" FontSize="18"></PasswordBox>
+		<Button Name="LoginButton" Content="Login" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" Margin="40,10,40,10" Click="LoginButton_Click"></Button>
+	</Grid>
+</Window>
